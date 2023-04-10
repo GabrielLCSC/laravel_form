@@ -8,6 +8,13 @@ use App\Models\Contact;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        // Get contact gata
+        $contacts = Contact::all();
+        //dd($contacts);
+        return view('welcome', ['contacts' => $contacts]);
+    }
     public function create()
     {
         return view('contact');
