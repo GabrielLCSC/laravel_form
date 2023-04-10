@@ -18,12 +18,6 @@
     <main>
         @yield('content')
     </main>
-    <footer>
-        <ul>
-            <li><a href="#">footer1</a></li>
-            <li><a href="#">footer2</a></li>
-        </ul>
-    </footer>
     <script src="{{ asset('js/app.js') }}"></script>
     <div class="space"></div>
 </body>
