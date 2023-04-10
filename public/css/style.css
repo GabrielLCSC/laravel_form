@@ -66,6 +66,16 @@ body{
     font-size: 1.7rem;
 }
 
+input {
+    display: block; 
+    }
+    
+    input + .alert, 
+    textarea + .alert
+    {
+        margin-top: 24px;
+        margin-bottom: 12px;
+    }
 
 h1{
     text-align: center;
@@ -124,6 +134,7 @@ textarea{
 }
 
 .login-box .user-box {
+    margin-bottom: 30px;
     position: relative;
 }
 
@@ -133,7 +144,6 @@ textarea{
     padding: 10px 0;
     font-size: 1.6rem;
     color: #ffffff;
-    margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
@@ -281,7 +291,12 @@ textarea{
 }
 
 .alert{
-    font-size: 1rem;
+    
+    font-weight: 500;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #fff;
     color: #ff0000;
 }
 
@@ -296,6 +311,7 @@ textarea{
         width: 80%;
     }
     .request{
+        
         margin-top: 100px;
         margin-left: 20px;
         margin-right: 20px;
@@ -306,16 +322,27 @@ textarea{
 @media screen and (max-width: 500px) {
 
     .login-box {
-        width: 90%;
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        width: 92%;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: rgba(0,0,0,.5);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.6);
+        border-radius: 10px;
     }
 
     .login-box .user-box input {
-        margin-left: 50px;
-        width: 75%;
+        margin-top: 15px;
+        margin-left: 40px;
+        width: 83%;
     }
     textarea{
-        margin-left: 50px;
-        width: 75%;
+        margin-left: 0px;
+        width: 100%;
+        height: 120px;
         
         
     
